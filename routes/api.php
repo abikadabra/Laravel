@@ -22,6 +22,10 @@ Route::get('login','loginController@index');
 Route::post('login','loginController@login');
 Route::post('register','loginController@register');
 Route::get('allUser','loginController@index');
+
+
+Route::get('edit','loginController@edit');
+Route::post('update/{id}','loginController@update');
+
+Route::post('delete/{id}','loginController@delete');
 Route::get('logout','loginController@logout');
-
-
